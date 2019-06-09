@@ -9,7 +9,7 @@ public class Calculate {
 	
 /**
 * Конструктор, вывод строки в консоль.
-* @param arg - arg.
+* @param args - args.
 */
 
 public static void main (String[] args){
