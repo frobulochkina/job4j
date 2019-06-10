@@ -6,6 +6,14 @@ package ru.job4j.calculate;
 */
 
 public class Calculate {
+	/**
+ * Method echo.
+ * @param name Your name.
+ * @return Echo plus your name.
+ */
+ public String echo(String name) {
+    return "Echo, echo, echo : " + name;
+ }
 	
 /**
 * Конструктор, вывод строки в консоль.
