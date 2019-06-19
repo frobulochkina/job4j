@@ -17,4 +17,5 @@ public class Calculator {
     public double multiple(double first, double second) {
         return first * second;
     }
+
 }
