@@ -4,6 +4,7 @@ package ru.job4j.condition;
  * Программа вычисления сторон и площади прямоугольника
  */
 
+
 public class SqArea {
     /**
      * @param k коэффициент.
