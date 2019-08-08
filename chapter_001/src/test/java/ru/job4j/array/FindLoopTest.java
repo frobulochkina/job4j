@@ -38,5 +38,15 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
+    @Test
+    public void whenArrayHas0Then2() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[] {5, 10, 0};
+        int value = 0;
+        int result = find.indexOf(input, value);
+        int expect = 2;
+        assertThat(result, is(expect));
+    }
+
 
 }
