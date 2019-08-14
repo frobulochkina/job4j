@@ -13,6 +13,7 @@ public class Check {
               if (data[i] != j) return false;
           }
         return result;
+
     }
 }
 

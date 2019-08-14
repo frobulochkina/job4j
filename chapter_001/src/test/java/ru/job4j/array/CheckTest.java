@@ -28,6 +28,14 @@ public class CheckTest {
     }
 
     @Test
+    public void whenDataMonoByTrueThenTrueNew() {
+        Check check = new Check();
+        boolean[] input = new boolean[] {false, false, false};
+        boolean result = check.mono(input);
+        assertThat(result, is(true));
+    }
+
+    @Test
     public void whenDataNotMonoEvenByTrueThenFalse() {
         Check check = new Check();
         boolean[] input = new boolean[] {true, false, true, true};
