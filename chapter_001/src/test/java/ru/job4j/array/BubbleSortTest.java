@@ -2,7 +2,7 @@ package ru.job4j.array;
 
 /**
  * @author – Lena Kachanova (konyakova.elena@gmail.com)
- * @since – 20.08.2019
+ * @since – 20.08.19
  */
 
 import org.junit.Test;

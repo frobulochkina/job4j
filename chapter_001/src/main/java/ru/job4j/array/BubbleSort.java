@@ -19,7 +19,7 @@ public class BubbleSort {
                 }
             }
         } while (count > 0);
-        return array;
+          return array;
     }
 }
 
