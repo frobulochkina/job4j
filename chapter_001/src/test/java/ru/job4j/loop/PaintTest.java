@@ -1,14 +1,8 @@
 package ru.job4j.loop;
 
-/**
- * @author – Lena Kachanova (konyakova.elena@gmail.com)
- * @since – 29.07.2019
- */
-
 import org.junit.Test;
 
 import java.util.StringJoiner;
-import java.util.function.BiPredicate;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;

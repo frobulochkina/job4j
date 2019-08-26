@@ -1,10 +1,5 @@
 package ru.job4j.array;
 
-/**
- * @author – Lena Kachanova (konyakova.elena@gmail.com)
- * @since – 21.08.2019
- */
-
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

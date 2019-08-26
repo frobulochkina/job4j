@@ -12,7 +12,7 @@ public class Check {
           for (int i = 1; i < data.length; i++) {
               if (data[i] != j) return false;
           }
-        return result;
+        return true;
 
     }
 }
