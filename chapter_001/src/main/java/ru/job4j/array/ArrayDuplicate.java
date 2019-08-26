@@ -1,6 +1,24 @@
 package ru.job4j.array;
 
-// --Commented out by Inspection START (25.08.2019 20:02):
-//public class ArrayDuplicate {
-//}
-// --Commented out by Inspection STOP (25.08.2019 20:02)
+/**
+ * @author – Lena Kachanova (konyakova.elena@gmail.com)
+ * @since – 26.08.2019
+ */
+
+import java.util.Arrays;
+
+public class ArrayDuplicate {
+    public String[] remove(String[] array){
+        int unique = array.length;
+        for (int out =0; out < unique; out++){
+            for (int in = out + 1; in < unique; in++){
+                if (array[out].equals(array[in])) {
+                    array[in] = array[unique - 1];
+                    unique--;
+                    in--;
+                }
+            }
+        }
+        return Arrays.copyOf(array, unique);
+    }
+}
