@@ -9,13 +9,15 @@
      <url>http://job4j.ru/</url>
 
     <properties>
-       <maven.compiler.source>1.8</maven.compiler.source>
-       <maven.compiler.target>1.8</maven.compiler.target>
+       <maven.compiler.source>11</maven.compiler.source>
+       <maven.compiler.target>11</maven.compiler.target>
        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-     </properties>
+    </properties>
 
     <modules>
-       <module>chapter_001</module>
+       <module>chapter_002</module>
+       <module>puzzle</module>
+       <module>chapter_008</module>
      </modules>
 	 
 	 	 <build>
@@ -39,6 +41,7 @@
                 <encoding>UTF-8</encoding>
                 <consoleOutput>true</consoleOutput>
                 <failsOnError>true</failsOnError>
+                <excludes>**/module-info.java</excludes>
                 <includeTestSourceDirectory>true</includeTestSourceDirectory>
             </configuration>
             <goals>
@@ -65,3 +68,32 @@
     </dependency>
  </dependencies>
 </project>
+
+
+<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-fxml</artifactId>
+    <version>12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-graphics</artifactId>
+    <version>12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base -->
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-base</artifactId>
+    <version>12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-controls</artifactId>
+    <version>12</version>
+</dependency>
