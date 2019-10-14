@@ -4,6 +4,7 @@ package ru.job4j.condition;
  * @author – Lena Kachanova (konyakova.elena@gmail.com)
  * @since – 30.06.2019
  */
+
 public class Max {
     /**
      * Максимальное число

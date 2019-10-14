@@ -11,7 +11,6 @@ public class Square {
         for (int index = 0; index < rst.length; index++) {
             rst[index] = (int) Math.pow(index + 1, 2);
         }
-        // заполнить массив через цикл элементами от 1 до bound возведенными в квадрат
         return rst;
     }
 }
