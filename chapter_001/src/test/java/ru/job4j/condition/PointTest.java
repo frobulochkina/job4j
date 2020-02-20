@@ -6,7 +6,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class PointTest {
-
     @Test
     public void when3And5Then3() {
         Point first = new Point(3, 3,0);

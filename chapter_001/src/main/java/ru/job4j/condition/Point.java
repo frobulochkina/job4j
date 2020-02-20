@@ -14,7 +14,6 @@ public class Point {
      * @param first координата x
      * @param second координата y
      */
-
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
