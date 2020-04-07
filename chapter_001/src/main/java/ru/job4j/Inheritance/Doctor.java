@@ -1,5 +1,4 @@
 package ru.job4j.Inheritance;
-
 import java.util.Date;
 
 public class Doctor extends Profession {
