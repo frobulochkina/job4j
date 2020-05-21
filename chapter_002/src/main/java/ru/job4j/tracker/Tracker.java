@@ -18,7 +18,6 @@ public class Tracker {
      * Указатель ячейки для новой заявки.
      */
     private int position = 0;
-    private int index = 100;
 
     /**
      * Метод добавления заявки в хранилище
@@ -46,12 +45,11 @@ public class Tracker {
      */
     public Item[] findAll() {
         Item[] names = new Item[items.length];
-        Item[] namesWithoutNull = new Item[names.length];
         int size = 0;
         for(int i = 0; i < names.length; i++){
             Item name = names[i];
             if(name != null){
-                namesWithoutNull[size] = name;
+                names[size] = name;
                 size++;
             }
         }
@@ -66,15 +64,15 @@ public class Tracker {
      * @return список элементов, у которых совпало name.
      */
     public Item[] findByName(String key) {
-        Item[] searcher  = new Item[this.index];
+        Item[] searcher  = new Item[this.position];
         int count = 0;
         for (int i = 0; i < this.position; i++) {
             if (key.equals(this.items[i].getName())) {
                 searcher [count++] = this.items[i];
             }
         }
-        searcher  = Arrays.copyOf(searcher , count);
-        return searcher ;
+        searcher = Arrays.copyOf(searcher, count);
+        return searcher;
     }
 
     /**
