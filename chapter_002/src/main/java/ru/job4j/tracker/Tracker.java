@@ -44,15 +44,6 @@ public class Tracker {
      * @return копию массива без пустых клеток.
      */
     public Item[] findAll() {
-        Item[] names = new Item[items.length];
-        int size = 0;
-        for(int i = 0; i < names.length; i++){
-            Item name = names[i];
-            if(name != null){
-                names[size] = name;
-                size++;
-            }
-        }
         return Arrays.copyOf(items, position);
     }
 
