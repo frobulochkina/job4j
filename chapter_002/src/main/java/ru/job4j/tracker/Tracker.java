@@ -19,6 +19,8 @@ public class Tracker {
      */
     private int position = 0;
 
+
+
     /**
      * Метод добавления заявки в хранилище
      * @param item новая заявка
@@ -79,7 +81,41 @@ public class Tracker {
                 break;
             }
         }
-        return searcher ;
+        return searcher;
+    }
+
+    private int indexOf(String id) {
+        int rsl = -1;
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                rsl = index;
+                break;
+            }
+        }
+        return rsl;
+    }
+
+    public boolean replace(String id, Item item) {
+        int index = indexOf(id);
+        if (index == -1) {
+            return false;
+        }
+        this.items[index] = item;
+        this.items[index].setId(id);
+        return true;
+    }
+
+    public boolean delete(String id) {
+        int distPosition = indexOf(id);
+        int start = distPosition + 1;
+        int size = position - distPosition;
+        if (distPosition == -1) {
+            return false;
+        }
+        System.arraycopy(items, start, items, distPosition, size);
+        items[position] = null;
+        position--;
+        return true;
     }
 
 }
