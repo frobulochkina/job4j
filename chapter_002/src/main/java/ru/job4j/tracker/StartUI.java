@@ -53,10 +53,9 @@ public class StartUI {
                     System.out.println("Item not found, check ID");
                 }
             } else if (select == 5) {
-                Item[] item = tracker.findAll();
-                if (item.length > 0) {
-                    System.out.println("Enter name: ");
-                    Item[] items = tracker.findByName(scanner.nextLine());
+                System.out.print("Enter name: ");
+                Item[] items = tracker.findByName(scanner.nextLine());
+                if (items.length > 0) {
                     for (int i = 0; i < items.length; i++) {
                         System.out.print("Name: " + items[i].getName() + ", Id:");
                         System.out.println(items[i].getId());
